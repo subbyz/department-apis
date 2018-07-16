@@ -20,4 +20,6 @@ public class DepartmentControllerTest {
         String testString = departmentController.getDepartmentNames();
         assertNotNull( testString );
     }
+
+
 }
