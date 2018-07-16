@@ -1,10 +1,7 @@
 package com.n2s.j2ee.departmentapis;
 
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class DepartmentController {
@@ -17,5 +14,10 @@ public class DepartmentController {
     @PutMapping(value="/updateDepartments", produces=MediaType.APPLICATION_JSON_VALUE )
     public String updateDepartmentNames(){
         return "Updated OK";
+    }
+
+    @DeleteMapping(value="/deleteDepartments", produces = MediaType.APPLICATION_JSON_VALUE)
+    public String deleteDepartmentnames(){
+        return "Delete OK";
     }
 }
