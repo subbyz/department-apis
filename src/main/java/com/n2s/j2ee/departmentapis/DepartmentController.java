@@ -20,4 +20,9 @@ public class DepartmentController {
     public String deleteDepartmentnames(){
         return "Delete OK";
     }
+
+    @PostMapping(value="/editDepartments", produces = MediaType.APPLICATION_JSON_VALUE)
+    public String editDepartmentnames(){
+        return "Edit OK";
+    }
 }
